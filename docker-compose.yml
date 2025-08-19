@@ -1,0 +1,10 @@
+services:
+  gps:
+    build: .
+    image: gps-trip-splitter:php8
+    working_dir: /app
+    volumes:
+      - ./:/app              # mount project root (scripts, Dockerfile, etc.)
+      - ./data:/app/data     # mount data folder explicitly
+    stdin_open: true
+    tty: true
