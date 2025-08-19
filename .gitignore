@@ -1,0 +1,18 @@
+# Ignore data files (raw input/output)
+data/points.csv
+data/trips.geojson
+data/rejects.log
+
+# Ignore any other CSV/GeoJSON/Log files under data
+data/*.csv
+data/*.geojson
+data/*.log
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor configs
+.vscode/
+.idea/
+*.swp
