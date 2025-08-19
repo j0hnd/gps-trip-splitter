@@ -23,7 +23,7 @@ Reads shuffled GPS points, cleans invalid rows, orders by time, splits into trip
 
    ```bash
    docker compose build
-   docker compose run --rm gps php your_script.php
+   docker compose run --rm gps php process_gps_points.php
    ```
 
    - If `data/points.csv` exists → it will use it.  
@@ -106,7 +106,7 @@ Each trip is assigned a **distinct color**.
 Run inside Docker:
 
 ```bash
-docker compose run --rm gps php your_script.php
+docker compose run --rm gps php process_gps_points.php
 ```
 
 This will:
